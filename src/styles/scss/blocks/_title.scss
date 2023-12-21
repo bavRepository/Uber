@@ -1,0 +1,16 @@
+.title {
+	color: #fff;
+	font-size: 36px;
+	font-weight: 700;
+	text-align: center;
+	text-transform: uppercase;
+	margin: 0 auto;
+	&__subtitle {
+		color: #fff;
+		font-size: 17px;
+		font-weight: 400;
+		&_dark {
+			color: #222;
+		}
+	}
+}
