@@ -1,0 +1,37 @@
+.choice {
+	&__top {
+		position: relative;
+		min-height: 500px;
+		padding-top: 57px;
+		background-color: #070716;
+
+		h2.title {
+			margin-top: 27px;
+		}
+		h2.title.title__subtitle {
+			margin-top: 10px;
+		}
+	}
+	&__car {
+		max-width: 760px;
+		max-height: 480px;
+		position: absolute;
+		bottom: -213px;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	&__bot {
+		padding-top: 210px;
+		width: 100%;
+		min-height: 400px;
+		background: url('../../assets/img/bg/mesh_bg.png');
+	}
+
+	&__desc {
+		color: $main-color;
+		text-align: center;
+		font-size: 17px;
+		font-weight: 300;
+		line-height: 24px;
+	}
+}
