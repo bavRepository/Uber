@@ -8,5 +8,21 @@
 	}
 	h2.title {
 		margin-top: 20px;
+		font-size: 36px;
+	}
+
+	&__desc {
+		color: #fff;
+		text-align: center;
+		font-size: 18px;
+		font-weight: 400;
+		line-height: 24px;
+		margin-top: 20px;
+	}
+
+	&__btn {
+		display: block;
+		margin: 0 auto;
+		margin-top: 116px;
 	}
 }

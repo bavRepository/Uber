@@ -14,34 +14,67 @@
 		width: 100%;
 		top: 53px;
 	}
+
+	&__wrapper {
+		gap: 15px;
+		width: 947px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
 	&__logo {
-		width: 285px;
-		height: 32px;
-		display: block;
+		transition: $all-100-ease-out;
+		&:hover {
+			transform: scale(1.04);
+			cursor: pointer;
+		}
+		flex-basis: 285px;
+		&-img {
+			width: 100%;
+		}
+		&-official {
+			margin-top: 5px;
+			color: #fff;
+			opacity: 0.5;
+			font-size: 13px;
+			font-style: normal;
+			font-weight: 100;
+		}
 	}
-	&__official {
-		margin-top: 5px;
-		color: #fff;
-		opacity: 0.5;
-		font-size: 13px;
-		font-style: normal;
-		font-weight: 100;
-	}
-	&__call {
-		margin-top: 3px;
-		color: #fff;
-		opacity: 0.7;
-		font-size: 12px;
-		font-weight: 300;
-		text-align: right;
-	}
-	&__phone {
-		color: #fff;
-		margin-top: 5px;
-		display: block;
-		text-align: right;
-		font-size: 22px;
-		font-weight: 400;
-		text-transform: uppercase;
+
+	&__info {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		// justify-content: right;
+		flex-grow: 1;
+		&-call {
+			padding: 0 15px;
+			margin-top: 3px;
+			color: #fff;
+			opacity: 0.7;
+			font-size: 12px;
+			font-weight: 300;
+			text-align: right;
+		}
+		&-phone {
+			padding: 0 15px;
+			// justify-self: flex-end;
+			color: #fff;
+			margin-top: 5px;
+			display: inline-block;
+			text-align: right;
+			font-size: 22px;
+			font-weight: 400;
+			text-transform: uppercase;
+			transition: $all-100-ease-out;
+			&:hover {
+				@include hover-style-btn;
+				font-size: 22px;
+			}
+		}
+		.btn {
+		}
 	}
 }

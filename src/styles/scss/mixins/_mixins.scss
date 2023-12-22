@@ -7,3 +7,17 @@
 		@content;
 	}
 }
+
+@mixin hover-style-btn() {
+	color: #fff;
+	font-size: 16px;
+	text-shadow:
+		1px 1px 20px #800080,
+		-1px -1px 20px #0000ff;
+	font-weight: 700;
+	border: 2px solid #800080;
+	box-shadow:
+		2px 4px 10px #ff0000,
+		-2px -4px 10px #8b0000;
+	border-radius: 12%;
+}

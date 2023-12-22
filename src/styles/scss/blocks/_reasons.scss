@@ -1,0 +1,16 @@
+.reasons {
+	min-height: 850px;
+	padding: 20px 0 64px 0;
+
+	.title_black {
+		margin-top: 33px;
+	}
+
+	&__wrapper {
+		margin-top: 16px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		gap: 26px;
+	}
+}

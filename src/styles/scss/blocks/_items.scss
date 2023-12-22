@@ -1,0 +1,35 @@
+.item-reason {
+	// max-width: 512px;
+	display: flex;
+	gap: 25px;
+	align-items: center;
+	&__round {
+		width: 116px;
+		height: 116px;
+		background-color: $second-color;
+		border-radius: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	&__icon {
+		width: 80px;
+		height: 66px;
+	}
+	&__desc {
+		max-width: 371px;
+	}
+	&__subtitle {
+		color: $second-color;
+		font-size: 17px;
+		font-weight: 400;
+		line-height: 21px;
+	}
+	&__text {
+		margin-top: 6px;
+		color: #202020;
+		font-size: 15px;
+		font-weight: 300;
+		line-height: 21px;
+	}
+}

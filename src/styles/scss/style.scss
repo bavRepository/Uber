@@ -1,6 +1,5 @@
 @import 'libs/normalize';
 @import 'libs/fonts';
-@import 'libs/bootstrap-grid.min';
 @import 'variables/variables';
 @import 'mixins/mixins';
 
@@ -8,9 +7,12 @@
 
 @import 'blocks/title';
 @import 'blocks/label';
+@import 'blocks/items';
+
 @import 'blocks/header';
 @import 'blocks/menu';
 @import 'blocks/buttons';
 @import 'blocks/promo';
+@import 'blocks/reasons';
 
 @import 'media/media';
