@@ -7,14 +7,14 @@
 
 @import 'blocks/title';
 @import 'blocks/label';
-@import 'blocks/items';
+@import 'blocks/items/item-reason.scss';
+@import 'blocks/items/item-mobile.scss';
 
 @import 'blocks/header';
 @import 'blocks/menu';
 @import 'blocks/buttons';
 @import 'blocks/promo';
 @import 'blocks/reasons';
-@import 'blocks/possibilities';
 @import 'blocks/mobile';
 
 @import 'media/media';
