@@ -11,7 +11,7 @@
 	text-transform: uppercase;
 	outline: none;
 	border: none;
-	@include transaction-btn-prop;
+	@include transaction-btn-timing;
 	&_fz18 {
 		font-size: 18px;
 		width: 259px;

@@ -1,7 +1,8 @@
 .cities {
 	min-height: 716px;
 	padding: 48px 0 45px 0;
-	background: url('../../assets/img/bg/world_bg.png') center center / cover no-repeat;
+	background: url('../../assets/img/bg/world_bg.png') center center / contain no-repeat;
+	position: relative;
 
 	h2.title {
 		margin-top: 26px;
@@ -10,14 +11,26 @@
 		margin-top: 2px;
 	}
 	&__link {
+		border: 1px dashed #b0c4de;
+		border-radius: 20%;
 		color: #1fbad6;
-
 		text-align: center;
-		font-family: Roboto;
 		font-size: 15px;
-		font-style: normal;
+		line-height: 50px;
+		padding: 0 20px;
 		font-weight: 400;
-		line-height: 68px; /* 453.333% */
 		text-transform: uppercase;
+		display: block;
+		position: absolute;
+		bottom: 45px;
+		left: 50%;
+		transform: translateX(-50%);
+		@include transaction-btn-timing;
+
+		&:hover {
+			@include hover-section-btn-effect;
+			transform: translateX(-50%);
+			border-radius: 20%;
+		}
 	}
 }
