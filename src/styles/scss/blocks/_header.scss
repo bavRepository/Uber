@@ -70,7 +70,7 @@
 			text-transform: uppercase;
 			transition: $all-100-ease-out;
 			&:hover {
-				@include hover-style-btn;
+				@include hover-section-btn-effect;
 				font-size: 22px;
 			}
 		}

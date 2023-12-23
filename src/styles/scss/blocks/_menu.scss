@@ -27,7 +27,7 @@
 		align-items: center;
 
 		&:hover {
-			@include hover-style-btn;
+			@include hover-menu-btn-effect;
 		}
 	}
 }

@@ -1,7 +1,7 @@
 .item-reason {
-	// max-width: 512px;
+	max-width: 480px;
 	display: flex;
-	gap: 25px;
+	gap: 15px;
 	align-items: center;
 	&__round {
 		width: 116px;
@@ -17,7 +17,7 @@
 		height: 66px;
 	}
 	&__desc {
-		max-width: 371px;
+		max-width: 349px;
 	}
 	&__subtitle {
 		color: $second-color;

@@ -4,4 +4,20 @@
 	h2.title {
 		margin-top: 28px;
 	}
+	&__wrapper {
+		padding: 0 10px;
+		max-width: 1095px;
+		margin: 0 auto;
+		margin-top: 33px;
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		gap: 61px 10px;
+	}
+	&__desc {
+		margin-top: 25px;
+		color: $second-color;
+		font-size: 17px;
+		font-weight: 300;
+	}
 }

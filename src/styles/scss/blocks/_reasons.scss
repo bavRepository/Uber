@@ -7,12 +7,13 @@
 	}
 
 	&__wrapper {
-		margin-top: 16px;
+		padding: 0 10px;
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
-		gap: 26px;
+		gap: 25px 5px;
 		max-width: 1064px;
 		margin: 0 auto;
+		margin-top: 20px;
 	}
 }
