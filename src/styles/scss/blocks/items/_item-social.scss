@@ -1,0 +1,19 @@
+.item-social {
+	display: flex;
+	gap: 5px;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	&__round {
+		width: 35px;
+		height: 35px;
+		border-radius: 100%;
+		background-color: $fifth-color;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	&__icon {
+		width: 19px;
+		height: 20px;
+	}
+}

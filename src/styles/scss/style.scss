@@ -7,9 +7,12 @@
 
 @import 'blocks/title';
 @import 'blocks/label';
-@import 'blocks/items/item-reason.scss';
-@import 'blocks/items/item-mobile.scss';
-@import 'blocks/items/item-requirement.scss';
+@import 'blocks/items/item-reason';
+@import 'blocks/items/item-mobile';
+@import 'blocks/items/item-requirement';
+@import 'blocks/items/divider';
+@import 'blocks/items/item-social';
+@import 'blocks/items/item-store';
 
 @import 'blocks/header';
 @import 'blocks/menu';
@@ -20,5 +23,6 @@
 @import 'blocks/choice';
 @import 'blocks/requirements';
 @import 'blocks/cities';
+@import 'blocks/footer';
 
 @import 'media/media';
