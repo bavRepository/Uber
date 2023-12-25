@@ -1,0 +1,100 @@
+@media (max-width: 1199.98px) {
+	.container {
+		max-width: 960px;
+	}
+
+	.header {
+		.menu {
+			&__link {
+				font-size: 14px;
+				padding: 0 20px;
+			}
+		}
+		&__wrapper {
+			padding: 0 60px;
+		}
+	}
+	.reasons {
+		&__wrapper {
+			justify-content: center;
+		}
+		.item-reason {
+			&__desc {
+				max-width: 460px;
+			}
+		}
+	}
+	.promo {
+		min-height: 730px;
+		padding-bottom: 0;
+		h1.title {
+			font-size: 50px;
+		}
+		h2.title {
+			font-size: 34px;
+		}
+		.btn {
+			width: 229px;
+			height: 53px;
+			margin-top: 80px;
+		}
+	}
+
+	.choice {
+		&__bot {
+			min-height: 300px;
+		}
+	}
+
+	.requirements {
+		&__wrapper {
+			justify-content: center;
+		}
+		.item-requirement {
+			max-width: 580px;
+			align-items: center;
+		}
+	}
+
+	.reasons {
+		h2.title {
+			font-size: 30px;
+		}
+		.item-reason {
+			&__round {
+				width: 100px;
+				height: 100px;
+			}
+			&__icon {
+				width: 60px;
+				height: 46px;
+			}
+		}
+	}
+
+	.footer {
+		&__social-wrapper {
+			justify-content: center;
+		}
+		&__mobile {
+			justify-content: center;
+		}
+	}
+}
+
+@media (max-width: 991.98px) {
+	.container {
+		max-width: 720px;
+	}
+}
+@media (max-width: 767.98px) {
+	.container {
+		max-width: 540px;
+	}
+}
+
+@media (max-width: 575.98px) {
+	.container {
+		max-width: 100%;
+	}
+}

@@ -28,7 +28,7 @@
 
 		&:hover {
 			@include hover-section-btn-effect;
-			transform: translateX(-50%);
+			transform: translateX(-50%) scale(1);
 			border-radius: 20%;
 		}
 	}

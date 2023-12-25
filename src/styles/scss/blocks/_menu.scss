@@ -7,27 +7,23 @@
 	list-style: none;
 	min-height: 53px;
 	&__item {
-		font-size: 15px;
-		font-weight: 300;
 		border-right: $border1px;
-		border-left: $border1px;
-		&:first-child {
-			border-left: none;
+		transition: $all-100-ease-out;
+		&:hover {
+			@include hover-menu-btn-effect;
+			border-right: none;
 		}
 		&:last-child {
 			border-right: none;
 		}
 	}
 	&__link {
-		transition: $all-100-ease-out;
+		font-size: 15px;
+		font-weight: 300;
 		min-height: 31px;
-		padding: 0 26px;
+		padding: 0 30px;
 		color: #fff;
 		display: flex;
 		align-items: center;
-
-		&:hover {
-			@include hover-menu-btn-effect;
-		}
 	}
 }
