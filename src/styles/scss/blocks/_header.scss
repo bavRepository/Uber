@@ -6,30 +6,26 @@
 		z-index: 1;
 	}
 	&__subheader {
-		min-height: 87px;
+		height: 87px;
 		background: rgba(0, 0, 0, 0.6);
 		display: flex;
 		align-items: center;
 		position: absolute;
 		width: 100%;
 		top: 53px;
-		.container {
-			width: 1140px;
-			display: flex;
-			justify-content: center;
-		}
 	}
 
 	&__wrapper {
-		gap: 15px;
-		flex-basis: 947px;
-		display: flex;
-		justify-content: space-between;
+		display: grid;
+		grid-template-columns: repeat(12, 1fr);
+		grid-template-rows: 87px;
 		align-items: center;
+		gap: 10px;
 	}
 
 	&__logo {
-		flex-basis: 285px;
+		grid-column: 2/5;
+		align-self: center;
 		&-img {
 			transition: $all-100-ease-out;
 			&:hover {
@@ -48,12 +44,10 @@
 	}
 
 	&__info {
-		display: flex;
-		flex-direction: column;
-		align-items: flex-end;
-		flex-grow: 1;
+		grid-column: 8/10;
+		align-self: center;
+		justify-self: center;
 		&-call {
-			padding-right: 15px;
 			margin-top: 3px;
 			color: #fff;
 			opacity: 0.7;
@@ -62,9 +56,8 @@
 			text-align: right;
 		}
 		&-phone {
-			padding: 0 15px;
 			color: #fff;
-			margin-top: 5px;
+			margin-top: 3px;
 			display: inline-block;
 			text-align: right;
 			font-size: 22px;
@@ -72,9 +65,13 @@
 			text-transform: uppercase;
 			transition: $all-100-ease-out;
 			&:hover {
-				@include hover-section-btn-effect;
+				transform: scale(1.1);
 				font-size: 22px;
 			}
 		}
+	}
+
+	.btn {
+		grid-column: 10/12;
 	}
 }
