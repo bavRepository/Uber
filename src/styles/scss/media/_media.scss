@@ -15,7 +15,7 @@
 			grid-template-columns: repeat(12, 1fr);
 			grid-template-rows: 87px;
 			align-items: center;
-			gap: 22px;
+			grid-gap: 22px;
 		}
 
 		&__logo {
@@ -108,7 +108,7 @@
 			}
 		}
 		&__wrapper {
-			gap: 8px;
+			grid-gap: 20px;
 		}
 
 		&__logo {
@@ -118,7 +118,6 @@
 			}
 		}
 		&__info {
-			justify-self: end;
 			&-phone {
 				grid-column: 8/10;
 				font-size: 18px;
@@ -130,7 +129,7 @@
 		.btn {
 			width: 130px;
 			height: 35px;
-			font-size: 13px;
+			font-size: 11px;
 		}
 	}
 	.promo {
@@ -189,6 +188,53 @@
 	}
 
 	.header {
+		position: relative;
+		.menu {
+			width: 50%;
+			background-color: rgba(0, 0, 0, 0.8);
+			height: 100vh;
+			padding: 8px 8px;
+			display: flex;
+			flex-direction: column;
+			gap: 12px;
+			justify-content: center;
+			position: absolute;
+			top: 0;
+			left: -100%;
+			// left: 100px;
+			transition: $all-600-ease-out;
+			&__item {
+				border: none;
+				transition: $all-100-ease-out;
+				text-align: center;
+			}
+			&__link {
+				font-size: 15px;
+				font-weight: 400;
+				min-height: 31px;
+				padding: 0 10px;
+				color: #fff;
+				display: flex;
+				align-items: center;
+				&:hover {
+					@include hover-menu-btn-effect;
+					font-weight: 300;
+				}
+			}
+			&_active {
+				left: 0%;
+			}
+		}
+		&__nav {
+			position: fixed;
+		}
+
+		.hamburger {
+			display: block;
+			&_active {
+				@include hamburger-cross;
+			}
+		}
 		&__wrapper {
 			display: grid;
 			grid-template-columns: repeat(12, 1fr);
@@ -237,9 +283,6 @@
 
 		&__nav {
 			min-height: 53px;
-		}
-		.menu {
-			display: none;
 		}
 	}
 

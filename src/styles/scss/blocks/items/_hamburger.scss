@@ -1,0 +1,21 @@
+.hamburger {
+	display: block;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 10px;
+	span {
+		transition: $all-600-ease-out;
+		display: block;
+		height: 2px;
+		width: 30px;
+		background-color: #fff;
+		margin-top: 4px;
+		&:nth-child(1) {
+			margin-top: 0;
+		}
+		&_active {
+			@include hamburger-cross;
+		}
+	}
+}

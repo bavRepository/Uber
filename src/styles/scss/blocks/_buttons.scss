@@ -20,4 +20,8 @@
 	&:hover {
 		@include hover-section-btn-effect;
 	}
+
+	&_night {
+		background: linear-gradient(0deg, #000000 30%, #191970 70%);
+	}
 }

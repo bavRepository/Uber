@@ -21,3 +21,34 @@ a {
 .hide {
 	display: none;
 }
+
+.daytime {
+	display: block;
+	z-index: 10;
+	font-weight: 700;
+	width: 80px;
+	height: 40px;
+	font-size: 14px;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	border-radius: 30%;
+	outline: none;
+	border: none;
+	@include transaction-btn-timing;
+
+	background-image: linear-gradient(to right, #008080 0%, #2f4f4f 51%, #7474bf 100%);
+
+	box-shadow:
+		3px 3px 20px #f4a460,
+		-3px -3px 20px #3b5655;
+
+	text-shadow:
+		1px 1px 10px #ff4500,
+		-1px -1px 10px #ff4500;
+	color: #ffdead;
+
+	&:hover {
+		transform: scale(1.15);
+	}
+}
