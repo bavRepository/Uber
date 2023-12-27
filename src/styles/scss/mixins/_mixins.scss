@@ -42,7 +42,6 @@
 	&:hover {
 		border-radius: 6px;
 		cursor: pointer;
-		color: #fff;
 		font-weight: 300;
 		font-size: 13px;
 		border: none;
@@ -53,7 +52,6 @@
 		text-shadow:
 			2px 2px 10px #2f4f4f,
 			-2px -2px 10px #2f4f4f;
-		color: $fifth-color;
 	}
 }
 @mixin transaction-btn-timing() {
