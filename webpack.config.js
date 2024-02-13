@@ -1,25 +1,25 @@
-const path = require('path')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
-const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const path = require('path'),
+	HtmlWebpackPlugin = require('html-webpack-plugin'),
+	MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
-const mode = process.env.NODE_ENV || 'development'
-const devMode = mode === 'development'
-const target = devMode ? 'web' : 'browserslist'
-const devtool = devMode ? 'source-map' : undefined
+const mode = process.env.NODE_ENV || 'development',
+	devMode = mode === 'development',
+	target = devMode ? 'web' : 'browserslist',
+	devtool = devMode ? 'source-map' : undefined
 
 module.exports = {
 	mode,
 	target,
 	devtool,
 	devServer: {
-		port: 3010,
+		port: 3000,
 		open: true,
 		hot: true
 	},
 	entry: ['@babel/polyfill', path.resolve(__dirname, 'src', 'js/script.js')],
 	output: {
 		path: path.resolve(__dirname, 'build'),
-		filename: 'bundle[contenthash].js',
+		filename: 'bundle.[contenthash].js',
 		assetModuleFilename: 'asset/[name][hash][ext]',
 		clean: true
 	},
@@ -38,7 +38,7 @@ module.exports = {
 				loader: 'html-loader'
 			},
 			{
-				test: /\.(c|sc|sa)ss$/i,
+				test: /\.(sc|sa|c)ss$/i,
 				use: [
 					devMode ? 'style-loader' : MiniCssExtractPlugin.loader,
 					'css-loader',
